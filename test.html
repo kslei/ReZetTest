@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <section class="test">
+    <div class="wrapper">
+      <div class="task">
+        <p class="title">Задание 1</p>
+        <p class="unit">Введите через запятую элементы массива</p>
+        <div class="field">
+          <input type="text" placeholder="Введите элементы" value="1, 3, 5, 4, 5, 7"/>
+          <button class="button" onclick=setArr1()>Выполнить</button>
+        </div>
+        <p class="result">Peзультат:</p>
+      </div>
+      <div class="task">
+        <p class="title">Задание 2</p>
+        <p class="unit">Введите через запятую элементы массива</p>
+        <div class="field">
+          <div class="matr">
+            <input type="text" placeholder="Введите элементы" value="1, 2, 3, 2, 7"/>
+            <input type="text" placeholder="Введите элементы" value="4, 5, 6, 8, 1"/>
+            <input type="text" placeholder="Введите элементы" value="7, 8, 9, 4, 5"/>
+          </div>
+          <button class="button" onclick=setArr2()>Выполнить</button>
+        </div>
+        
+        <p class="result">Peзультат:</p>
+      </div>
+      <div class="task">
+        <p class="title">Задание 3</p>
+        <p class="unit">Введите через запятую без пробела элементы строк</p>
+        <div class="field">
+          <div class="matr">
+            <input type="text" placeholder="Введите элементы" value="Hello,world" />
+            <input type="text" placeholder="Введите элементы" value="Brad,came,to,dinner,with,as" />
+            <input type="text" placeholder="Введите элементы" value="He,loves,tacos" />
+          </div>
+          <button class="button" onclick=setArr3()>Выполнить</button>
+        </div>
+        <p class="unit">Введите через запятую без пробела выравнивание строк</p>
+        <input type="text" placeholder="Введите элементы" class="bigLetter" value="Left,Right,Left"/>
+        <p class="unit">Введите лимит количества знаков в строке</p>
+        <input type="text" placeholder="Введите элементы" value="16"/>
+        <p class="result">Peзультат:</p>
+      </div>
+    </div>
+  </section>
+  <script src="test.js"></script>
+</body>
+</html>
